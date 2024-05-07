@@ -8,4 +8,5 @@ class Basepage():
 
     def enter_text(self,locator,text):
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(locator)).send_keys(text)
+        print("test")
         
